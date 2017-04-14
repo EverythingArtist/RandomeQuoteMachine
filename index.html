@@ -4,23 +4,17 @@
 body{
   background-color: black;
 }
-
 h2{
   font-family: times new roman;
   color: white;
-  
 }
-
 .quote{
   color: white;
- 
 }
-
 .author{
   color: white;
   font-style: italic;
 }
-
 .quotes{
   background-color: black;
   margin-left: auto;
@@ -28,19 +22,14 @@ h2{
   width: 33%;
   border: solid;
   border-color: white;
-  
 }
-
-
 </style>
-
+  
 <body>
   <script>
   $(document).ready(function() {
-
 var randomQuote;
    var author;
-   
    function getQuote(){
       var url ="http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
      $.getJSON(url, function(data){
@@ -48,26 +37,19 @@ var randomQuote;
        $(".author").html("-"+ data.quoteAuthor);
      });
    };
- 
-   
+
    $('#tweet').on("click", function(){
      window.open("https://twitter.com/intent/tweet" );
-     
    });
    
     $("#newQuote").on("click", function(){
-     
      getQuote();
    });
-    
   });
   </script>
 
 <div class="container-fluid text-center">
-  
     <h2>Random quote machine</h2>
-  
-  
   
   <button class = "btn btn-default" type="submit" id="newQuote"> Quote </button>
   <a href="#" class = "btn btn-info"  id="tweet">Tweet</a>
