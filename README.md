@@ -1,4 +1,4 @@
-# RandomeQuotMachine
+# RandomQuoteMachine
 Pulls up a random Quote
 
 http://codepen.io/EverythingArtist/pen/VbYYvp
